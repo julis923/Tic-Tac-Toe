@@ -25,7 +25,6 @@ let tieGame = false;
 let compWins = 0
 let youWin = 0
 
-
 let rows = {
     rowA: [null, null, null],
     rowB: [null, null, null],
