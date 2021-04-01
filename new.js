@@ -9,9 +9,9 @@ let C2 = document.getElementById('C2')
 let C3 = document.getElementById('C3')
 let compScore = document.getElementById('compScore')
 let userScore = document.getElementById('userScore')
-
 let endBlock = document.getElementById('game-end')
 let result = document.getElementById('results')
+let resultBlock = document.getElementById('score')
 
 let set = []
 let finalSet = []
@@ -24,6 +24,25 @@ let userWins = false;
 let tieGame = false;
 let compWins = 0
 let youWin = 0
+
+
+function flashRed() {
+    resultBlock.style.border = '2px solid red'
+    setTimeout(flashBlack, 300)
+    setTimeout(function() {resultBlock.style.border = '2px solid red'}, 600)
+    setTimeout(flashBlack, 900)
+}
+
+function flashBlue() {
+    resultBlock.style.border = '2px solid blue'
+    setTimeout(flashBlack, 300)
+    setTimeout(function() {resultBlock.style.border = '2px solid blue'}, 600)
+    setTimeout(flashBlack, 900)
+}
+
+function flashBlack() {
+    resultBlock.style.border = '2px solid black'
+}
 
 let rows = {
     rowA: [null, null, null],
@@ -48,9 +67,8 @@ function checkWinner(player) {
                     result.innerHTML = 'You Win!'
                     endBlock.style.display = 'block'
                     youWin++
+                    setTimeout(flashBlue, 200)
                     userScore.innerHTML = 'User: ' + youWin
-                    userScore.style.fontSize = '30px'
-                    userScore.style.fontWeight = 'bold'
                 }
             } 
         }
@@ -64,9 +82,8 @@ function checkWinner(player) {
                     endBlock.style.display = 'block'
                     result.innerHTML = 'Computer Wins!'
                     compWins++
+                    setTimeout(flashRed, 200)
                     compScore.innerHTML = 'Computer: ' + compWins
-                    compScore.style.fontSize = '30px'
-                    compScore.style.fontWeight = 'bold'
                 } 
             }
         } 

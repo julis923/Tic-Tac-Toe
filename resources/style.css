@@ -87,15 +87,14 @@ button:active {
 
 #head {
     padding-top: 15px;
+    padding-bottom: 15px;
     font-family: 'Jura', sans-serif;
     font-size: 30px;
     text-decoration: underline;
     margin: 0px;
-    opacity: 100%;
 }
 
 #score-box {
-    padding-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,12 +104,14 @@ button:active {
 
 #userScore {
     font-family: 'Jura', sans-serif;
-    font-size: 15px;
+    font-size: 30px;
+    margin-bottom: 0px;
 }
 
 #compScore {
+    margin-top: 0px;
     font-family: 'Jura', sans-serif;
-    font-size: 15px;
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 768px) {
