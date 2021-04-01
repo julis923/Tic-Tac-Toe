@@ -28,16 +28,16 @@ let youWin = 0
 
 function flashRed() {
     resultBlock.style.border = '2px solid red'
-    setTimeout(flashBlack, 300)
-    setTimeout(function() {resultBlock.style.border = '2px solid red'}, 600)
-    setTimeout(flashBlack, 900)
+    setTimeout(flashBlack, 200)
+    setTimeout(function() {resultBlock.style.border = '2px solid red'}, 400)
+    setTimeout(flashBlack, 600)
 }
 
 function flashBlue() {
     resultBlock.style.border = '2px solid blue'
-    setTimeout(flashBlack, 300)
-    setTimeout(function() {resultBlock.style.border = '2px solid blue'}, 600)
-    setTimeout(flashBlack, 900)
+    setTimeout(flashBlack, 200)
+    setTimeout(function() {resultBlock.style.border = '2px solid blue'}, 400)
+    setTimeout(flashBlack, 600)
 }
 
 function flashBlack() {
