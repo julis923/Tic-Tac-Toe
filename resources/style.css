@@ -114,7 +114,7 @@ button:active {
     font-size: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
     main {
         display: flex;
         flex-direction: column;
