@@ -1,0 +1,115 @@
+
+header {
+    text-align: center;
+    margin: 10px;
+}
+
+header h1 {
+    display: inline;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family: 'Jura', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.table-div {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+tr {
+    border: 3px solid black;
+    padding: 75px;
+    background-color: white;
+}
+
+td {
+    border: 3px solid black;
+    padding: 75px;
+}
+
+#game-end {
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    padding: 15px;
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    display: none;
+    opacity: 90%;
+}
+
+#results {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: white;
+	padding: 5px;
+	cursor: pointer;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+#play-again {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    opacity: 100%;
+}
+
+button:active {
+    outline: 2px solid black;
+}
+
+#score {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#head {
+    padding-top: 5px;
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 0px;
+    opacity: 100%;
+}
+
+#score-box {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#userScore {
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+}
+
+#compScore {
+    font-family: 'Jura', sans-serif;
+    font-size: 15px;
+}
+
