@@ -1,4 +1,8 @@
 
+body {
+    padding: 50px;
+}
+
 header {
     text-align: center;
     margin-top: 2px;
@@ -15,6 +19,7 @@ main {
     margin-top: 25px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -26,6 +31,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 tr {
@@ -37,6 +43,7 @@ tr {
 td {
     border: 3px solid black;
     padding: 75px;
+    cursor: pointer;
 }
 
 #game-end {
